@@ -15,11 +15,10 @@ jobs:
       - name: Running some python commands
         run : |
           import platform
-          print 
-          (platform.processor())   
+          print(platform.processor())   
 
         shell: python   
-  run-Windows-commands:
+  run-windows-commands:
     runs-on: windows-latest
     stpes:
       - name: Getting current location
