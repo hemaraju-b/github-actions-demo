@@ -17,6 +17,12 @@ jobs:
           import platform
           print(platform.processor())   
         shell: python   
+      - name: Checkout some Code 
+        uses : actions/checkout
+        run: |
+          ls -lrtha
+          pwd
+
   run-windows-commands:
     runs-on: windows-latest
     steps:
