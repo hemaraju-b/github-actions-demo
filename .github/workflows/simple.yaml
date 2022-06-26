@@ -19,3 +19,11 @@ jobs:
           (platform.processor())   
 
         shell: python   
+  run-Windows-commands:
+    runs-on: windows-latest
+    stpes:
+      - name: Getting current location
+        run : Get-Location
+      - name : running bash command
+        run : pwd
+        shell: bash
