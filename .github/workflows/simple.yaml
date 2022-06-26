@@ -1,0 +1,14 @@
+name: Shell commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: echoing string 
+        run: echo "hello vinodh welcome to GHA"
+      - name : echo npm versions
+        run : |
+          npm -v
+          node -v 
