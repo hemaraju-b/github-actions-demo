@@ -19,6 +19,7 @@ jobs:
         shell: python   
       - name: Checkout some Code 
         uses : actions/checkout
+      - name : checking file after checkout  
         run: |
           ls -lrtha
           pwd
