@@ -25,7 +25,7 @@ jobs:
           pwd
 
   run-windows-commands:
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
       - name: Getting current location
         run : Get-Location
