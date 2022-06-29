@@ -23,6 +23,7 @@ jobs:
         run: |
           ls -lrtha
           pwd
+          echo " just added "
 
   run-windows-commands:
     runs-on: self-hosted
