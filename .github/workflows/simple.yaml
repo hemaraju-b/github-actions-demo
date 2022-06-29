@@ -33,5 +33,5 @@ jobs:
       - name : running bash command
         run : pwd
       - name: running one more bash
-        run : echo " vinodh here"
-        shell : bash
+        run : Get-Service
+        #shell : bash
