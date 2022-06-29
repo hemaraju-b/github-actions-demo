@@ -32,7 +32,6 @@ jobs:
         run : Get-Location
       - name : running bash command
         run : pwd
-        shell: bash
       - name: running one more bash
         run : echo " vinodh here"
         shell : bash
