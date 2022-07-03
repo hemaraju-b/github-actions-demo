@@ -3,7 +3,7 @@ on: push
 job:
   log-env:
     runs-on: ubuntu-latest
-     env:
+    env:
       JOB_ENV: this is job level env
     steps:  
     env: 
