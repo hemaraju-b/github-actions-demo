@@ -6,7 +6,6 @@ jobs:
     env:
       JOB_ENV: this is job level env
     steps:  
-    env: 
       - name: log env variable
         run: |
           echo "JOB_ENV:${JOB_ENV}"
