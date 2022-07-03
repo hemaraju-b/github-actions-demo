@@ -1,6 +1,6 @@
 name: testing different types of Environment variables in github
 on: push
-job:
+jobs:
   log-env:
     runs-on: ubuntu-latest
     env:
