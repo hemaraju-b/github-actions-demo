@@ -5,10 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       JOB_ENV: this is job level env
+      JOB_ENV1: ${{secrets.JOB_ENV}}
+      #this we can store in github actions ussing setting and secret creations
+
     steps:  
       - name: log env variable
         run: |
           echo "JOB_ENV:${JOB_ENV}"
+          echo "JOB_ENV1"
         
       - name : step env variable 
         env:
