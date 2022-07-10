@@ -12,10 +12,10 @@ jobs:
       - name: log env variable
         run: |
           echo "JOB_ENV:${JOB_ENV}"
-          echo "JOB_ENV1:${JOB_ENV1}""
+          echo "JOB_ENV1:${JOB_ENV1}"
         
       - name : step env variable 
         env:
           STEP_ENV: this is step level env  
         run : |
-          echo " STEP_ENV: ${STEP_ENV}"
+          echo "STEP_ENV: ${STEP_ENV}"
