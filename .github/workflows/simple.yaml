@@ -1,12 +1,12 @@
 name: Shell commands
 
-#on: [push, pull_request]
-on:
-  schedule:
-    - cron: "0/2 * * * *" 
+on: [push, pull_request]
+#on:
+  #schedule:
+    #- cron: "0/2 * * * *" 
     #At every 2nd minute from 0 through 59.”
 
-    - cron: "0/6 * * * *"
+    #- cron: "0/6 * * * *"
     #At every 6th minute from 0 through 59.”
 
 
