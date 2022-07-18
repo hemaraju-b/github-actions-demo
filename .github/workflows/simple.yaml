@@ -42,3 +42,4 @@ jobs:
       - name: running one more bash
         run : Get-Service
         #shell : bash
+        #sshell will not work in windows
