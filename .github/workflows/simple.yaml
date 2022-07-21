@@ -14,6 +14,11 @@ on: [push, pull_request]
   #pull_request:
     #types: [closed,assigned,opened,reopened]
 jobs:
+  test-on-windows:
+    runs-on: self-hosted
+    steps:
+      - name: checking some basic windows commands
+        run:     
   run-shell-command:
     runs-on: ubuntu-latest
     steps: 
@@ -37,7 +42,8 @@ jobs:
           echo " just added"
 
   run-windows-commands:
-    runs-on: self-hosted
+    #runs-on: self-hosted
+    runs-on: [self-hosted, windows-hem1, Windows] we can use this labels as well 
     steps:
       - name: Getting current location
         run : Get-Location
